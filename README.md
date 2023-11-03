@@ -25,9 +25,11 @@ Cost-Efficiency: Targeted improvements based on test results can save resources 
 Compliance Assurance: Demonstrating robust security testing and validation is essential for compliance with industry regulations and standards.
 Proactive Defense: Continuous testing allow organizations to stay ahead of evolving threat landscapes.
 # 1.5.	Conclusion
+
 In an era where cyber threats are increasingly sophisticated and frequent, the TOP 10 Adversarial Technique Test Agent offers a vital tool for SOC and IT security service/product validation. By assessing security systems against specific MITRE techniques and sub-techniques, organizations can strengthen their defences, proactively respond to threats, and ultimately safeguard their digital assets and reputation. This research paper serves as a guide for organizations seeking to fortify their security posture and ensure the reliability of their SOC and security solutions in the face of emerging cyber threats.
  
 # 2.	Techniques
+
 2.1.	T1059.003 - Windows Command Shell
 2.1.1.	Description
 Tactic: Execution
@@ -309,9 +311,10 @@ By combining these detection and prevention strategies, organizations can enhanc
  
 # 3.	Usage
 Simply download the file from Github (https://github.com/blackcellltd/cytractop10testagent), install it and run on the target or a UAT system where the measured IT security test in place. (“Run as administrator” is advised for the full results.).
+Put either valid or wrong credentials when prompt pops up. 
 All dependencies are included in the program's installation package except: Mimikatz, and Bloodhound libraries.
 To fully utilize the features, the test host need active internet connection to let the tool download libraries from Github via HTTPS.
-The installed Cytrac Test Agent can be uninstalled from via the regular “Add or remove programs” control panel item. 
+**The installed Cytrac Test Agent can be uninstalled from via the regular “Add or remove programs” control panel item. **
 Different antivirus or endpoint security solutions can detect and categorize the executable itself as unwanted application or any type of malware. The file doesn’t contain any malware and can be whitelisted before the first run. See the Disclaimer below.
 
 # 4.	Disclaimer: Use of the TOP 10 Adversarial Technique Test Agent
