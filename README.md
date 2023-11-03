@@ -1,5 +1,6 @@
 # Cytrac MITRE Top 10 Test agent
 TOP 10 Adversarial Technique Test Agent
+**Doesn't contain any real malware, read Usage paragraph**
 
 ## Description
 
