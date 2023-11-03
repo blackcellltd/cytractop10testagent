@@ -1,12 +1,17 @@
 # Cytrac MITRE Top 10 Test agent
 TOP 10 Adversarial Technique Test Agent
-**Doesn't contain any real malware, read Usage paragraph**
+
+**Doesn't contain any real malware, read Usage paragraph. The extracted executable is safe to allow in Antivirus settings. To fully utilze the agent, all of the dependecies (Mimikatz, Sharphound/Bloodhound...) must be allowed by the antivirus to allow SIEM/EDR/XDR rules to trigger.**
+
+**The ZIP archive password is: PASSWORD**
 
 ## Description
 
 # 1.1.	Purpose
+
 The modern threat landscape demands robust security measures, and the validation of Security Operations Center (SOC) and IT security services/products is crucial to ensure the readiness of organizations to defend against adversarial attacks. This paper introduces the TOP 10 Adversarial Technique Test Agent, a testing tool designed to evaluate the efficacy of SOC and IT security solutions on Windows systems. The tool assesses the detection and prevention capabilities of security systems against ten key MITRE ATT&CK techniques and sub-techniques based on Red Canaries Top techniques, providing high level insights into their ability to safeguard against real-world threats.
 # 1.2.	Methodology
+
 The paper outlines a systematic methodology for testing SOC and IT security services/products using the TOP 10 Adversarial Technique Test Agent. It covers the following MITRE techniques and sub-techniques:
 -	T1059:003 - Windows Command Shell
 -	T1059:001 - PowerShell
@@ -18,13 +23,18 @@ The paper outlines a systematic methodology for testing SOC and IT security serv
 -	T1569.002 - Service Execution
 -	T1036.003 - Rename System Utilities
 -	T1003.001 - LSASS Memory
+
 # 1.3.	Findings
+
 Through testing of the specified MITRE techniques and sub-techniques, the TOP 10 Adversarial Technique Test Agent provided critical insights into the SOC's or security product's performance. It had assessed their ability to detect, respond to, and mitigate threats posed by these adversarial techniques. The findings revealed strengths and weaknesses in the security infrastructure, enabling organizations to make informed decisions for improvement.
+
 # 1.4.	Benefits
+
 Enhanced Security: By identifying gaps in detection and prevention capabilities, organizations can bolster their security posture and better protect critical assets.
 Cost-Efficiency: Targeted improvements based on test results can save resources and prevent potential breaches, reducing the overall cost of security operations.
 Compliance Assurance: Demonstrating robust security testing and validation is essential for compliance with industry regulations and standards.
 Proactive Defense: Continuous testing allow organizations to stay ahead of evolving threat landscapes.
+
 # 1.5.	Conclusion
 
 In an era where cyber threats are increasingly sophisticated and frequent, the TOP 10 Adversarial Technique Test Agent offers a vital tool for SOC and IT security service/product validation. By assessing security systems against specific MITRE techniques and sub-techniques, organizations can strengthen their defences, proactively respond to threats, and ultimately safeguard their digital assets and reputation. This research paper serves as a guide for organizations seeking to fortify their security posture and ensure the reliability of their SOC and security solutions in the face of emerging cyber threats.
@@ -337,9 +347,16 @@ Connected URLs by cytrac.exe:
 -	bit.ly…
 
 # Possible Antivirus or IDPS detections:
--	„Mimikatz credential theft tool”
--	„Bloodhound post-exploitation tool”
--	“Virus/Win32.WGeneric”
+
+While running:
+
+-	"Mimikatz credential theft tool"
+-	"Bloodhound post-exploitation tool"
+-	"Virus/Win32.WGeneric"
+  
+After extract:
+
+-	"EUS:Win32/CustomEnterpriseBlock"
 
 Additional folders created by the agent:
 -	C:\temp\
